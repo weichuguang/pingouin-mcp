@@ -1,0 +1,53 @@
+name: Bug report
+description: A tool returned an error or a statistically wrong result.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Include the exact tool call, the returned result and the
+        versions below. Do not paste sensitive data.
+  - type: input
+    id: version
+    attributes:
+      label: Version / commit
+      placeholder: "e.g. 0.1.0 or commit b3d6c70"
+    validations:
+      required: true
+  - type: dropdown
+    id: tool
+    attributes:
+      label: Tool
+      options:
+        - stat_decision_assistant
+        - stat_assumption_report
+        - stat_ttest
+        - stat_anova
+        - stat_rm_anova
+        - stat_correlation
+        - stat_linear_regression
+        - stat_mediation
+        - stat_run_code
+        - Other / server startup
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual result
+      description: What the correct statistical result or behaviour should be, and what happened.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproduction
+      description: The smallest dataframe or call that reproduces the problem.
+      render: python
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      placeholder: "Python 3.13, Pingouin 0.6.1, pandas 3.0.0, NumPy 2.2"
+    validations:
+      required: true
