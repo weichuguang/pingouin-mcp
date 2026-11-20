@@ -1,0 +1,42 @@
+# Environments
+.venv/
+venv/
+env/
+.conda/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Runtime output
+results/
+figures/
+*.png
+*.svg
+
+# Local configuration
+.env
+config.json
+.pingouin-mcp/
+
+# Documents and archives
+*.docx
+*.doc
+*.pdf
+*.zip
+~$*
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

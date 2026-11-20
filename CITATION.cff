@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use Pingouin-MCP in a publication, please cite this repository."
+title: "Pingouin-MCP: a Model Context Protocol server for statistical analysis with Pingouin"
+type: software
+authors:
+  - name: "Pingouin-MCP contributors"
+repository-code: "https://github.com/weichuguang/pingouin-mcp"
+url: "https://github.com/weichuguang/pingouin-mcp"
+license: MIT
+version: 0.1.0
+date-released: "2026-11-20"
+keywords:
+  - statistics
+  - Pingouin
+  - MCP
+  - reproducibility
+  - psychology
