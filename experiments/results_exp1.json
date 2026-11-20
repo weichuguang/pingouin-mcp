@@ -1,0 +1,257 @@
+{
+ "validity": "21/21",
+ "runnability": "21/21",
+ "abstention": "3/3",
+ "deterministic": true,
+ "rows": [
+  {
+   "design": "{'dv_type': 'continuous', 'n_groups': 1, 'repeated': False}",
+   "recommended": "one-sample t-test",
+   "expected_substr": [
+    "one-sample"
+   ],
+   "valid": true,
+   "runnable": true,
+   "flagged": false,
+   "pass_": true
+  },
+  {
+   "design": "{'dv_type': 'continuous', 'n_groups': 1, 'repeated': False, 'normality_ok': False}",
+   "recommended": "Wilcoxon signed-rank test",
+   "expected_substr": [
+    "Wilcoxon"
+   ],
+   "valid": true,
+   "runnable": true,
+   "flagged": false,
+   "pass_": true
+  },
+  {
+   "design": "{'dv_type': 'continuous', 'n_groups': 2, 'repeated': False}",
+   "recommended": "independent-samples t-test",
+   "expected_substr": [
+    "independent-samples"
+   ],
+   "valid": true,
+   "runnable": true,
+   "flagged": false,
+   "pass_": true
+  },
+  {
+   "design": "{'dv_type': 'continuous', 'n_groups': 2, 'repeated': False, 'normality_ok': False}",
+   "recommended": "Mann-Whitney U test",
+   "expected_substr": [
+    "Mann-Whitney"
+   ],
+   "valid": true,
+   "runnable": true,
+   "flagged": false,
+   "pass_": true
+  },
+  {
+   "design": "{'dv_type': 'continuous', 'n_groups': 2, 'repeated': True}",
+   "recommended": "paired t-test",
+   "expected_substr": [
+    "paired"
+   ],
+   "valid": true,
+   "runnable": true,
+   "flagged": false,
+   "pass_": true
+  },
+  {
+   "design": "{'dv_type': 'continuous', 'n_groups': 2, 'repeated': True, 'normality_ok': False}",
+   "recommended": "Wilcoxon signed-rank test",
+   "expected_substr": [
+    "Wilcoxon"
+   ],
+   "valid": true,
+   "runnable": true,
+   "flagged": false,
+   "pass_": true
+  },
+  {
+   "design": "{'dv_type': 'continuous', 'n_groups': 3, 'repeated': False}",
+   "recommended": "one-way ANOVA",
+   "expected_substr": [
+    "one-way ANOVA"
+   ],
+   "valid": true,
+   "runnable": true,
+   "flagged": false,
+   "pass_": true
+  },
+  {
+   "design": "{'dv_type': 'continuous', 'n_groups': 3, 'repeated': False, 'normality_ok': False}",
+   "recommended": "Kruskal-Wallis test",
+   "expected_substr": [
+    "Kruskal-Wallis"
+   ],
+   "valid": true,
+   "runnable": true,
+   "flagged": false,
+   "pass_": true
+  },
+  {
+   "design": "{'dv_type': 'continuous', 'n_groups': 4, 'repeated': False}",
+   "recommended": "one-way ANOVA",
+   "expected_substr": [
+    "one-way ANOVA"
+   ],
+   "valid": true,
+   "runnable": true,
+   "flagged": false,
+   "pass_": true
+  },
+  {
+   "design": "{'dv_type': 'continuous', 'n_groups': 3, 'repeated': True}",
+   "recommended": "repeated-measures ANOVA",
+   "expected_substr": [
+    "repeated-measures ANOVA"
+   ],
+   "valid": true,
+   "runnable": true,
+   "flagged": false,
+   "pass_": true
+  },
+  {
+   "design": "{'dv_type': 'continuous', 'n_groups': 3, 'repeated': True, 'sphericity_ok': False}",
+   "recommended": "repeated-measures ANOVA with Greenhouse-Geisser correction",
+   "expected_substr": [
+    "Greenhouse-Geisser"
+   ],
+   "valid": true,
+   "runnable": true,
+   "flagged": false,
+   "pass_": true
+  },
+  {
+   "design": "{'dv_type': 'continuous', 'n_groups': 3, 'repeated': True, 'normality_ok': False}",
+   "recommended": "Friedman test",
+   "expected_substr": [
+    "Friedman"
+   ],
+   "valid": true,
+   "runnable": true,
+   "flagged": false,
+   "pass_": true
+  },
+  {
+   "design": "{'dv_type': 'continuous', 'n_groups': 3, 'repeated': False, 'has_covariate': True}",
+   "recommended": "ANCOVA",
+   "expected_substr": [
+    "ANCOVA"
+   ],
+   "valid": true,
+   "runnable": true,
+   "flagged": false,
+   "pass_": true
+  },
+  {
+   "design": "{'dv_type': 'continuous', 'n_groups': 3, 'repeated': False, 'n_dv': 2}",
+   "recommended": "MANOVA",
+   "expected_substr": [
+    "MANOVA"
+   ],
+   "valid": true,
+   "runnable": true,
+   "flagged": false,
+   "pass_": true
+  },
+  {
+   "design": "{'dv_type': 'categorical'}",
+   "recommended": "chi-square test of independence",
+   "expected_substr": [
+    "chi-square"
+   ],
+   "valid": true,
+   "runnable": true,
+   "flagged": false,
+   "pass_": true
+  },
+  {
+   "design": "{'dv_type': 'count'}",
+   "recommended": "Poisson / negative-binomial regression",
+   "expected_substr": [
+    "Poisson"
+   ],
+   "valid": true,
+   "runnable": true,
+   "flagged": true,
+   "pass_": true
+  },
+  {
+   "design": "{'dv_type': 'ordinal', 'n_groups': 2, 'repeated': False}",
+   "recommended": "non-parametric test (rank-based)",
+   "expected_substr": [
+    "non-parametric"
+   ],
+   "valid": true,
+   "runnable": true,
+   "flagged": false,
+   "pass_": true
+  },
+  {
+   "design": "{'dv_type': 'continuous', 'n_groups': 3, 'predicting': True}",
+   "recommended": "linear regression",
+   "expected_substr": [
+    "linear regression"
+   ],
+   "valid": true,
+   "runnable": true,
+   "flagged": false,
+   "pass_": true
+  },
+  {
+   "design": "{'dv_type': 'continuous', 'n_groups': 2, 'repeated': False, 'homogeneity_ok': False}",
+   "recommended": "Welch's t-test",
+   "expected_substr": [
+    "Welch"
+   ],
+   "valid": true,
+   "runnable": true,
+   "flagged": false,
+   "pass_": true
+  },
+  {
+   "design": "{'dv_type': 'continuous', 'n_groups': 2, 'repeated': False, 'goal': 'equivalence'}",
+   "recommended": "equivalence test (TOST)",
+   "expected_substr": [
+    "equivalence"
+   ],
+   "valid": true,
+   "runnable": true,
+   "flagged": false,
+   "pass_": true
+  },
+  {
+   "design": "{'dv_type': 'categorical', 'repeated': True}",
+   "recommended": "McNemar's test",
+   "expected_substr": [
+    "McNemar"
+   ],
+   "valid": true,
+   "runnable": true,
+   "flagged": false,
+   "pass_": true
+  }
+ ],
+ "abstention_rows": [
+  {
+   "design": "{'dv_type': 'continuous'}",
+   "asked": true,
+   "question": "How many groups / conditions are being compared? (1 = one sample vs a reference "
+  },
+  {
+   "design": "{'dv_type': 'continuous', 'n_groups': 2}",
+   "asked": true,
+   "question": "Are the groups independent (different participants in each group) or repeated/pa"
+  },
+  {
+   "design": "{'dv_type': 'continuous', 'n_groups': 5}",
+   "asked": true,
+   "question": "Are the groups independent (different participants in each group) or repeated/pa"
+  }
+ ],
+ "failures": []
+}
